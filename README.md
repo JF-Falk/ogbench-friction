@@ -1,6 +1,6 @@
 # Introduction
 
-Train agents on MuJoCo environments using OGBench and optionally provide multiplier to change the MuJoCo model's friction.
+Train agents on MuJoCo environments using OGBench and optionally provide a multiplier to change the MuJoCo model's friction.
 
 This uses a sparse checkout of [reference implementations from OGBench](https://github.com/seohongpark/ogbench/tree/master?tab=readme-ov-file#reference-implementations "github.com/seohongpark/ogbench") as a base.
 
