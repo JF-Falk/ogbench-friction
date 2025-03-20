@@ -45,6 +45,7 @@ flags.DEFINE_integer('eval_on_cpu', 1, 'Whether to evaluate on CPU.')
 
 config_flags.DEFINE_config_file('agent', '../impls/agents/sac.py', lock_config=False)
 
+flags.DEFINE_float('friction_mult', None, 'Friction multiplier for the model.')
 
 def main(_):
     # Set up logger.
@@ -60,8 +61,8 @@ def main(_):
     config = FLAGS.agent
 
     # Set up environments and replay buffer.
-    env = make_online_env(FLAGS.env_name)
-    eval_env = make_online_env(FLAGS.env_name)
+    env = make_online_env(FLAGS.env_name, FLAGS.friction_mult)
+    eval_env = make_online_env(FLAGS.env_name, FLAGS.friction_mult)
 
     example_transition = dict(
         observations=env.observation_space.sample(),

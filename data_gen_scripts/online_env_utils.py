@@ -2,7 +2,7 @@ import gymnasium
 from utils.env_utils import EpisodeMonitor
 
 
-def make_online_env(env_name):
+def make_online_env(env_name, friction_mult=None):
     """Make online environment.
 
     If the environment name contains the '-xy' suffix, the environment will be wrapped with a directional locomotion
@@ -10,6 +10,7 @@ def make_online_env(env_name):
 
     Args:
         env_name: Name of the environment.
+        friction_mult: Friction scale to use for FrictionWrapper (applied if provided and >= 0 and not 1).
     """
     import ogbench.online_locomotion  # noqa
 
@@ -38,6 +39,11 @@ def make_online_env(env_name):
             env = DMCHumanoidXYWrapper(env, resample_interval=200)
         else:
             env = GymXYWrapper(env, resample_interval=100)
+
+    if friction_mult is not None and friction_mult >= 0 and friction_mult != 1:
+        # apply friction multiplier if it is non-negative and non-trivial
+        from FrictionWrapper import FrictionWrapper
+        env = FrictionWrapper(env, friction_mult)
 
     env = EpisodeMonitor(env)
 
