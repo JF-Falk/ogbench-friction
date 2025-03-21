@@ -39,7 +39,9 @@ python3 main_sac.py --train_steps=400000 --save_interval=400000 --friction_mult=
 
 # Results
 
-To roughly average out the randomness of the trained agents, ten SAC agents were trained with default friction and $10\%$ increased friction (multiplier $=1.1$) respectively.
+To roughly average out the randomness of the trained agents, ten SAC agents were trained with default and $10 \\%$ increased friction
+\
+(multiplier $=\\,1.1$) respectively.
 
 Check the [interactive result report](https://api.wandb.ai/links/jf-johs-luh/lvuvteaf "wandb.ai"), or alternatively the following image:
 
