@@ -1,9 +1,3 @@
-<style>
-	a[href]>img[src^="./static"] {
-		width: 100%;
-	}
-</style>
-
 # Introduction
 
 Train agents on MuJoCo environments using OGBench and optionally provide a multiplier to change the MuJoCo model's friction.
@@ -73,20 +67,20 @@ Ten runs (i. e. agents) with the default and a $10 \%$ increased friction value 
 ### Position & Velocity
 
 <a href="https://wandb.ai/jf-johs-luh/OGBench_AntWalk/reports/AntEnv-Friction-Report--VmlldzoxMTg5ODE3OA?accessToken=a5qmx3cffmqjne5tttu230yyxmspttxwo6sv32ei9t0alh1jt6k8ip30t88qq4zq#position-&-velocity" title="View in W&B Report">
-	<img src="./static/wandb-1_1.png" alt="[Report PNG] Comparison of Metrics > Position & Velocity"/>
+	<img width="100%" src="./static/wandb-1_1.png" alt="[Report PNG] Comparison of Metrics > Position & Velocity"/>
 </a>
 
 
 ### General Metrics
 
 <a href="https://wandb.ai/jf-johs-luh/OGBench_AntWalk/reports/AntEnv-Friction-Report--VmlldzoxMTg5ODE3OA?accessToken=a5qmx3cffmqjne5tttu230yyxmspttxwo6sv32ei9t0alh1jt6k8ip30t88qq4zq#general-metrics" title="View in W&B Report">
-	<img src="./static/wandb-1_2_1.png" alt="[Report PNG] Comparison of Metrics > General Metrics 1"/>
+	<img width="100%" src="./static/wandb-1_2_1.png" alt="[Report PNG] Comparison of Metrics > General Metrics 1"/>
 </a>
 
 The `reward_survive` in particular is identical and `total.timesteps` lines up almost perfectly.
 
 <a href="https://wandb.ai/jf-johs-luh/OGBench_AntWalk/reports/AntEnv-Friction-Report--VmlldzoxMTg5ODE3OA?accessToken=a5qmx3cffmqjne5tttu230yyxmspttxwo6sv32ei9t0alh1jt6k8ip30t88qq4zq#general-metrics" title="View in W&B Report">
-	<img src="./static/wandb-1_2_2.png" alt="[Report PNG] Comparison of Metrics > General Metrics 2"/>
+	<img width="100%" src="./static/wandb-1_2_2.png" alt="[Report PNG] Comparison of Metrics > General Metrics 2"/>
 </a>
 
 
@@ -103,14 +97,14 @@ How the media is created: [videos](https://github.com/seohongpark/ogbench/blob/m
 ### Default Friction
 
 <a href="https://wandb.ai/jf-johs-luh/OGBench_AntWalk/reports/AntEnv-Friction-Report--VmlldzoxMTg5ODE3OA?accessToken=a5qmx3cffmqjne5tttu230yyxmspttxwo6sv32ei9t0alh1jt6k8ip30t88qq4zq#default-friction" title="View in W&B Report">
-	<img src="./static/wandb-2_1.png" alt="[Report PNG] Media > Default Friction"/>
+	<img width="100%" src="./static/wandb-2_1.png" alt="[Report PNG] Media > Default Friction"/>
 </a>
 
 
 ### Increased Friction
 
 <a href="https://wandb.ai/jf-johs-luh/OGBench_AntWalk/reports/AntEnv-Friction-Report--VmlldzoxMTg5ODE3OA?accessToken=a5qmx3cffmqjne5tttu230yyxmspttxwo6sv32ei9t0alh1jt6k8ip30t88qq4zq#increased-friction" title="View in W&B Report">
-	<img src="./static/wandb-2_2.png" alt="[Report PNG] Media > Increased Friction"/>
+	<img width="100%" src="./static/wandb-2_2.png" alt="[Report PNG] Media > Increased Friction"/>
 </a>
 
 
@@ -122,7 +116,7 @@ Changing the friction too much causes issues with the collision, as demonstrated
 Nonetheless, the friction can be increased beyond that to break the model entirely.
 
 <a href="https://wandb.ai/jf-johs-luh/OGBench_AntWalk/reports/AntEnv-Friction-Report--VmlldzoxMTg5ODE3OA?accessToken=a5qmx3cffmqjne5tttu230yyxmspttxwo6sv32ei9t0alh1jt6k8ip30t88qq4zq#issues" title="View in W&B Report">
-	<img src="./static/wandb-3.png" alt="[Report PNG] Issues"/>
+	<img width="100%" src="./static/wandb-3.png" alt="[Report PNG] Issues"/>
 </a>
 
 <br/>
