@@ -1,3 +1,8 @@
+<div align="center">
+	<h3><a href="#results">Results</a></h3>
+</div>
+
+
 # Introduction
 
 Train agents on MuJoCo environments using OGBench and optionally provide a multiplier to change the MuJoCo model's friction.
@@ -31,6 +36,21 @@ python3 main_sac.py --train_steps=400000 --save_interval=400000
 python3 main_sac.py --train_steps=400000 --save_interval=400000 --friction_mult=1.1
 ```
 > run `python3 main_sac.py --help` for default values, notably [`--agent`](data_gen_scripts/main_sac.py#L46)
+
+<br/>
+<br/>
+
+# Results
+
+To roughly average out the randomness of the trained agents, ten SAC agents were trained with default friction and $10\%$ increased friction (multiplier $=1.1$) respectively.
+
+Check the [interactive result report](https://api.wandb.ai/links/jf-johs-luh/lvuvteaf "wandb.ai"), or alternatively the following image:
+
+<p align="center">
+    <a href="./static/wandb report.pdf">
+        <img src="./static/wandb report.png" alt="PNG Report"/>
+    </a>
+</p>
 
 <br/>
 <br/>
