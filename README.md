@@ -9,7 +9,7 @@ This uses a sparse checkout of [reference implementations from OGBench](https://
 ```bash
 pip install -r requirements.txt
 ```
-> compared to the original OGBench requirements, this has a downgraded *matplotlib* version due to an `AttributeError` with `FigureCanvasInterAgg`
+> compared to the original OGBench requirements, this has a downgraded *matplotlib* version due to an `AttributeError` with `FigureCanvasInterAgg` (see [here](https://github.com/RVC-Project/Retrieval-based-Voice-Conversion-WebUI/issues/2411 "GitHub Issue: \"AttributeError: 'FigureCanvasAgg' object has no attribute 'tostring_rgb'  #2411\""))
 
 ## Execution
 
@@ -30,6 +30,7 @@ python3 main_sac.py --train_steps=400000 --save_interval=400000
 # run with 10% increased friction:
 python3 main_sac.py --train_steps=400000 --save_interval=400000 --friction_mult=1.1
 ```
+> run `python3 main_sac.py --help` for default values, notably [`--agent`](data_gen_scripts/main_sac.py#L46)
 
 <br/>
 <br/>
