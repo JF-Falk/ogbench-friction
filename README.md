@@ -1,8 +1,3 @@
-<div align="center">
-	<h3><a href="#results">Results</a></h3>
-</div>
-
-
 # Introduction
 
 Train agents on MuJoCo environments using OGBench and optionally provide a multiplier to change the MuJoCo model's friction.
@@ -37,8 +32,10 @@ python3 main_sac.py --train_steps=400000 --save_interval=400000 --friction_mult=
 ```
 > run `python3 main_sac.py --help` for default values, notably [`--agent`](data_gen_scripts/main_sac.py#L46)
 
+
 <br/>
 <br/>
+
 
 # Results
 
@@ -52,8 +49,10 @@ Check the [interactive result report](https://api.wandb.ai/links/jf-johs-luh/lvu
     </a>
 </p>
 
+
 <br/>
 <br/>
+
 
 # Acknowledgments
 
